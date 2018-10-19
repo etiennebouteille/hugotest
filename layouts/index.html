@@ -6,7 +6,9 @@
   </head>
   <body>
       {{range .Pages}}
-      {{.Title}}<br>
+      <ul>
+          <li><a href ="{{ .URL }}" >{{.Title}}</a></li>
+      </ul>
       {{end}}
   </body>
 </html>
